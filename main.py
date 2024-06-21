@@ -2,8 +2,6 @@ from fastapi import FastAPI
 
 from api.imac.core.configs import settings
 from api.imac.api import api_router
-
-
 app = FastAPI(title='Curso API - Segurança')
 app.include_router(api_router, prefix=settings.API_V1_STR)
 

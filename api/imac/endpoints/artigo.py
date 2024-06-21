@@ -10,7 +10,6 @@ from models.usuario_model import UsuarioModel
 from api.imac.schemas.artigo_schema import ArtigoSchema
 from api.imac.core.deps import get_session, get_current_user
 
-
 router = APIRouter()
 
 
