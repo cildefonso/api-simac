@@ -9,10 +9,10 @@ from sqlalchemy.future import select
 from sqlalchemy.exc import IntegrityError
 
 from models.usuario_model import UsuarioModel
-from schemas.usuario_schema import UsuarioSchemaBase, UsuarioSchemaCreate, UsuarioSchemaUp, UsuarioSchemaArtigos
-from core.deps import get_session, get_current_user
-from core.security import gerar_hash_senha
-from core.auth import autenticar, criar_token_acesso
+from api.imac.schemas.usuario_schema import UsuarioSchemaBase, UsuarioSchemaCreate, UsuarioSchemaUp, UsuarioSchemaArtigos
+from api.imac.core.deps import get_session, get_current_user
+from api.imac.core.security import gerar_hash_senha
+from api.imac.core.auth import autenticar, criar_token_acesso
 
 
 router = APIRouter()

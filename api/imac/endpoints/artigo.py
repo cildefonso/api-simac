@@ -7,8 +7,8 @@ from sqlalchemy.future import select
 
 from models.artigo_model import ArtigoModel
 from models.usuario_model import UsuarioModel
-from schemas.artigo_schema import ArtigoSchema
-from core.deps import get_session, get_current_user
+from api.imac.schemas.artigo_schema import ArtigoSchema
+from api.imac.core.deps import get_session, get_current_user
 
 
 router = APIRouter()
